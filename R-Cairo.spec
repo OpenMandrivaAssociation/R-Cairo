@@ -12,6 +12,11 @@ Source0:          http://cran.r-project.org/src/contrib/Archive/%{packname}/%{pa
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex 
 BuildRequires:    cairo-devel
 BuildRequires:    glib2-devel
+BuildRequires:    libice-devel
+BuildRequires:    libsm-devel
+BuildRequires:    libx11-devel
+BuildRequires:    libxmu-devel
+BuildRequires:    libxt-devel
 %rename R-cran-Cairo
 
 %description
