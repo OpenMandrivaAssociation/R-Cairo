@@ -2,13 +2,13 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          1.5_0
+Version:          1.5_1
 Release:          1
 Summary:          R graphics device using cairo graphics library for creating high-quality bitmap (PNG, JPEG, TIFF), vector (PDF, SVG, PostScript) and display (X11 and Win32) output
 Group:            Sciences/Mathematics
 License:          GPL-2
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/Archive/%{packname}/%{packname}_1.5-0.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/%{packname}_1.5-1.tar.gz
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex 
 BuildRequires:    cairo-devel
 BuildRequires:    glib2-devel
