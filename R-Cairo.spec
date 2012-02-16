@@ -14,7 +14,6 @@ BuildRequires:    cairo-devel
 BuildRequires:    glib2-devel
 BuildRequires:    libice-devel
 BuildRequires:    libsm-devel
-BuildRequires:    libx11-devel
 BuildRequires:    libxmu-devel
 BuildRequires:    libxt-devel
 %rename R-cran-Cairo
