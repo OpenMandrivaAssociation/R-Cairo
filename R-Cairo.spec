@@ -3,7 +3,7 @@
 
 Name:             R-%{packname}
 Version:          1.5_1
-Release:          1
+Release:          2
 Summary:          R graphics device using cairo graphics library for creating high-quality bitmap (PNG, JPEG, TIFF), vector (PDF, SVG, PostScript) and display (X11 and Win32) output
 Group:            Sciences/Mathematics
 License:          GPL-2
