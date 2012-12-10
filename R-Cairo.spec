@@ -56,3 +56,43 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/R
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/libs
+
+
+%changelog
+* Thu Feb 16 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.5_1-2
++ Revision: 775066
+- Update to latest version
+- Update to latest version
+
+* Thu Feb 16 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.5_0-1
++ Revision: 774884
+- Update and rebuild with R2spec
+- Update and rebuild with R2spec
+
+* Fri Dec 25 2009 Jérôme Brenier <incubusss@mandriva.org> 2.10-1mdv2010.1
++ Revision: 482262
+- new version 2.10
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+
+* Sun Aug 10 2008 Tomasz Pawel Gajc <tpg@mandriva.org> 2.8-1mdv2009.0
++ Revision: 270294
+- update to new version 2.8
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+    - rebuild
+
+* Fri Feb 29 2008 Tomasz Pawel Gajc <tpg@mandriva.org> 2.6-2mdv2008.1
++ Revision: 176958
+- remove requires on libR.so
+
+* Sun Feb 17 2008 Tomasz Pawel Gajc <tpg@mandriva.org> 2.6-1mdv2008.1
++ Revision: 169889
+- fix buildrequires
+- fix Url
+- suggests R-cran-RGtk2
+- add source and spec file
+- Created package structure for R-cran-cairoDevice.
+
