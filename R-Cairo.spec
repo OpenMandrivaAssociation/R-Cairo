@@ -2,14 +2,15 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          1.5_1
-Release:          2
-Summary:          R graphics device using cairo graphics library for creating high-quality bitmap (PNG, JPEG, TIFF), vector (PDF, SVG, PostScript) and display (X11 and Win32) output
+Version:          1.5.2
+Release:          1
+Summary:          Graphics device using cairo for creating high-quality output
 Group:            Sciences/Mathematics
 License:          GPL-2
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/%{packname}_1.5-1.tar.gz
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex 
+Source0:          http://cran.r-project.org/src/contrib/Cairo_1.5-2.tar.gz
+Requires:         R-png
+BuildRequires:    R-devel Rmath-devel R-png texlive-collection-latex 
 BuildRequires:    cairo-devel
 BuildRequires:    glib2-devel
 BuildRequires:    libice-devel
@@ -56,43 +57,3 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/R
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/libs
-
-
-%changelog
-* Thu Feb 16 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.5_1-2
-+ Revision: 775066
-- Update to latest version
-- Update to latest version
-
-* Thu Feb 16 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.5_0-1
-+ Revision: 774884
-- Update and rebuild with R2spec
-- Update and rebuild with R2spec
-
-* Fri Dec 25 2009 Jérôme Brenier <incubusss@mandriva.org> 2.10-1mdv2010.1
-+ Revision: 482262
-- new version 2.10
-
-  + Thierry Vignaud <tv@mandriva.org>
-    - rebuild
-
-* Sun Aug 10 2008 Tomasz Pawel Gajc <tpg@mandriva.org> 2.8-1mdv2009.0
-+ Revision: 270294
-- update to new version 2.8
-
-  + Thierry Vignaud <tv@mandriva.org>
-    - rebuild
-    - rebuild
-
-* Fri Feb 29 2008 Tomasz Pawel Gajc <tpg@mandriva.org> 2.6-2mdv2008.1
-+ Revision: 176958
-- remove requires on libR.so
-
-* Sun Feb 17 2008 Tomasz Pawel Gajc <tpg@mandriva.org> 2.6-1mdv2008.1
-+ Revision: 169889
-- fix buildrequires
-- fix Url
-- suggests R-cran-RGtk2
-- add source and spec file
-- Created package structure for R-cran-cairoDevice.
-
