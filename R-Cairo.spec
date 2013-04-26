@@ -3,7 +3,7 @@
 
 Name:             R-%{packname}
 Version:          1.5.2
-Release:          1
+Release:          2
 Summary:          Graphics device using cairo for creating high-quality output
 Group:            Sciences/Mathematics
 License:          GPL-2
@@ -14,9 +14,9 @@ BuildRequires:    R-devel Rmath-devel R-png texlive-collection-latex
 BuildRequires:    cairo-devel
 BuildRequires:    glib2-devel
 BuildRequires:    libice-devel
-BuildRequires:    libsm-devel
-BuildRequires:    libxmu-devel
-BuildRequires:    libxt-devel
+BuildRequires:    pkgconfig(sm)
+BuildRequires:    pkgconfig(xmu)
+BuildRequires:    pkgconfig(xt)
 %rename R-cran-Cairo
 
 %description
