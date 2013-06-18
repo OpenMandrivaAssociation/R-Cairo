@@ -3,7 +3,7 @@
 
 Name:             R-%{packname}
 Version:          1.5.2
-Release:          2
+Release:          3
 Summary:          Graphics device using cairo for creating high-quality output
 Group:            Sciences/Mathematics
 License:          GPL-2
