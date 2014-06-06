@@ -12,8 +12,8 @@ Source0:          http://cran.r-project.org/src/contrib/Cairo_1.5-2.tar.gz
 Requires:         R-png
 BuildRequires:    R-devel Rmath-devel R-png texlive-collection-latex 
 BuildRequires:    cairo-devel
-BuildRequires:    glib2-devel
-BuildRequires:    libice-devel
+BuildRequires:    pkgconfig(glib-2.0)
+BuildRequires:    pkgconfig(ice)
 BuildRequires:    pkgconfig(sm)
 BuildRequires:    pkgconfig(xmu)
 BuildRequires:    pkgconfig(xt)
