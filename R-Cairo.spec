@@ -7,7 +7,7 @@ Release:          4
 Summary:          Graphics device using cairo for creating high-quality output
 Group:            Sciences/Mathematics
 License:          GPL-2
-URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
+URL:              https://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/Cairo_1.5-2.tar.gz
 Requires:         R-png
 BuildRequires:    R-devel Rmath-devel R-png texlive-collection-latex 
